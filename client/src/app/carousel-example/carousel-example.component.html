@@ -13,7 +13,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Quiénes Somos</a>
+                <a   class="nav-link"  href="#quienesSomos" SimpleSmoothScroll [showHash]="true">Quiénes Somos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contáctenos</a>
@@ -115,7 +115,7 @@
         <hr class="featurette-divider">
     
         <div class="row featurette">
-          <div class="col-md-7">
+          <div class="col-md-7" id="quienesSomos" SimpleSmoothScroll [scrollTo]="'navbarCollapse'" [duration]="500">
             <h2 class="featurette-heading">Servicio 1. <span class="text-muted">La seriedad es lo que nos importa.</span></h2>
             <p class="lead">Aquí va un breve detalle de nuestro servicio. Para saber más clic en el botòn "Más información".</p>
           </div>

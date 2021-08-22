@@ -25,6 +25,7 @@
     "bootstrap": "4.1.1",
     "express": "^4.17.1",
     "font-awesome": "^4.7.0",
+    "ng2-simple-smooth-scroll": "^1.2.0",
     "ngx-bootstrap": "^6.2.0",
     "path": "^0.12.7",
     "rxjs": "~6.6.0",

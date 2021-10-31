@@ -4,6 +4,9 @@ import { SimpleSmoothScrollOption } from 'ng2-simple-smooth-scroll';
 import { BsDropdownConfig } from 'ngx-bootstrap/dropdown';
 
 
+
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,6 +16,8 @@ import { BsDropdownConfig } from 'ngx-bootstrap/dropdown';
 export class AppComponent implements OnInit{
   title = 'Estudio Jurídico';
   public   isCollapsed = false;
+  customClass = 'customClass';
+  isFirstOpen = false;
   constructor(private smooth: SimpleSmoothScrollService) { }
  
   ngOnInit() {

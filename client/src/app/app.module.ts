@@ -8,8 +8,8 @@ import { AlbumExampleComponent } from './album-example/album-example.component';
 import { CarouselExampleComponent } from './carousel-example/carousel-example.component';
 import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
 
 
 @NgModule({
@@ -26,7 +26,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     SimpleSmoothScrollModule,
     CarouselModule.forRoot(),
     BrowserAnimationsModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    AccordionModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

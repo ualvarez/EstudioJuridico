@@ -108,6 +108,7 @@ body {
 
   ul {
    font-size:x-large;
+   font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
   .dropdown-toggle, .dropdown-item{
@@ -115,11 +116,13 @@ body {
 }
 
 a{
+  font-family: Georgia, 'Times New Roman', Times, serif;
   cursor: pointer;
 }
 
 p {
   font-size:x-large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -130,4 +133,5 @@ main{
     padding-left: 80px;
  
 }
+
 

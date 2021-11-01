@@ -1,114 +1,299 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <div class="container-fluid" id="DivInicio" SimpleSmoothScroll [showHash]="true">
+      <div
+        class="container-fluid"
+        id="DivInicio"
+        SimpleSmoothScroll
+        [showHash]="true"
+      >
         <div class="row justify-content-md-center">
-          <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 " >
-            <a class="nav-link" href="#"> <img src="assets/images/logo.jpg" class="rounded-circle"
-                alt="second slide" style="display: block; width: 30%;" id="LinkInicio" SimpleSmoothScroll [scrollTo]="'DivInicio'" [duration]="500"></a>
-              
-                
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-              (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic"
-              aria-label="Toggle navigation">
+          <div
+            class="col col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4"
+          >
+            <a class="nav-link" href="#">
+              <img
+                src="assets/images/logo.jpg"
+                class="rounded-circle"
+                alt="second slide"
+                style="display: block; width: 30%;"
+                id="LinkInicio"
+                SimpleSmoothScroll
+                [scrollTo]="'DivInicio'"
+                [duration]="500"
+              />
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+              (click)="isCollapsed = !isCollapsed"
+              [attr.aria-expanded]="!isCollapsed"
+              aria-controls="collapseBasic"
+              aria-label="Toggle navigation"
+            >
               <span class="navbar-toggler-icon"></span>
             </button>
-             
-          
           </div>
-          <div class="col col-xs-4 col-sm-4 col-md-4 col-lg-6 col-xl-6 col-xxl-6">
-            <div class="collapse navbar-collapse" id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
-              <ul class="navbar-nav me-auto mb-2 mb-md-0">               
+          <div
+            class="col col-xs-4 col-sm-4 col-md-4 col-lg-6 col-xl-6 col-xxl-6"
+          >
+            <div
+              class="collapse navbar-collapse"
+              id="collapseBasic"
+              [collapse]="isCollapsed"
+              [isAnimated]="true"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" id="LinkInicio" SimpleSmoothScroll [scrollTo]="'DivInicio'" [duration]="500">Inicio</a>
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    id="LinkInicio"
+                    SimpleSmoothScroll
+                    [scrollTo]="'DivInicio'"
+                    [duration]="500"
+                  >
+                    Inicio
+                  </a>
                 </li>
                 <li class="nav-item nav-link">
-
                   <div class="dropdown" dropdown>
-                    <a class="dropdown-toggle text-light" dropdownToggle>Servicios</a>
+                    <a class="dropdown-toggle text-light" dropdownToggle>
+                      Servicios
+                    </a>
                     <div class="dropdown-menu" *dropdownMenu>
-                      <a class="dropdown-item" id="LinkAccidenteTransito" SimpleSmoothScroll
-                        [scrollTo]="'DivAccidenteTransito'" [duration]="500">Accidentes de Tránsito</a>
-                      <a class="dropdown-item" id="LinkART" SimpleSmoothScroll [scrollTo]="'DivART'"
-                        [duration]="500">ART</a>
-                      <a class="dropdown-item" id="LinkDerechoLaboral" SimpleSmoothScroll
-                        [scrollTo]="'DivDerechoLaboral'" [duration]="500">Derecho Laboral</a>
-                      <a class="dropdown-item" id="LinkFamilia" SimpleSmoothScroll [scrollTo]="'DivFamilia'"
-                        [duration]="500">Familia</a>
-                      <a class="dropdown-item" id="LinkDerechoPenal" SimpleSmoothScroll [scrollTo]="'DivDerechoPenal'"
-                        [duration]="500">Derecho Penal</a>
-                        <a class="dropdown-item" id="LinkAsesoramiento Inmobiliario" SimpleSmoothScroll [scrollTo]="'DivAsesoramientoInmobiliario'"
-                        [duration]="500">Asesoramiento Inmobiliario</a>
+                      <a
+                        class="dropdown-item"
+                        id="LinkAccidenteTransito"
+                        SimpleSmoothScroll
+                        [scrollTo]="'DivAccidenteTransito'"
+                        [duration]="500"
+                      >
+                        Accidentes de Tránsito
+                      </a>
+                      <a
+                        class="dropdown-item"
+                        id="LinkART"
+                        SimpleSmoothScroll
+                        [scrollTo]="'DivART'"
+                        [duration]="500"
+                      >
+                        ART
+                      </a>
+                      <a
+                        class="dropdown-item"
+                        id="LinkDerechoLaboral"
+                        SimpleSmoothScroll
+                        [scrollTo]="'DivDerechoLaboral'"
+                        [duration]="500"
+                      >
+                        Derecho Laboral
+                      </a>
+                      <a
+                        class="dropdown-item"
+                        id="LinkFamilia"
+                        SimpleSmoothScroll
+                        [scrollTo]="'DivFamilia'"
+                        [duration]="500"
+                      >
+                        Familia
+                      </a>
+                      <a
+                        class="dropdown-item"
+                        id="LinkDerechoPenal"
+                        SimpleSmoothScroll
+                        [scrollTo]="'DivDerechoPenal'"
+                        [duration]="500"
+                      >
+                        Derecho Penal
+                      </a>
+                      <a
+                        class="dropdown-item"
+                        id="LinkAsesoramiento Inmobiliario"
+                        SimpleSmoothScroll
+                        [scrollTo]="'DivAsesoramientoInmobiliario'"
+                        [duration]="500"
+                      >
+                        Asesoramiento Inmobiliario
+                      </a>
                     </div>
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="LinkQuienesSomos" SimpleSmoothScroll [scrollTo]="'DivQuienesSomos'"
-                    [duration]="500" tabindex="-1">¿Quiénes Somos?</a>
+                  <a
+                    class="nav-link"
+                    id="LinkQuienesSomos"
+                    SimpleSmoothScroll
+                    [scrollTo]="'DivQuienesSomos'"
+                    [duration]="500"
+                    tabindex="-1"
+                  >
+                    ¿Quiénes Somos?
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" tabindex="-1" id="LinkPreguntasFrecuentes" SimpleSmoothScroll
-                    [scrollTo]="'DivPreguntasFrecuentes'" [duration]="500">Preguntas Frecuentes</a>
-                </li>                   
+                  <a
+                    class="nav-link"
+                    tabindex="-1"
+                    id="LinkPreguntasFrecuentes"
+                    SimpleSmoothScroll
+                    [scrollTo]="'DivPreguntasFrecuentes'"
+                    [duration]="500"
+                  >
+                    Preguntas Frecuentes
+                  </a>
+                </li>
               </ul>
             </div>
-          </div>             
+          </div>
         </div>
-      </div>     
+      </div>
       <div class="col col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-        <a  target="_blank"  tabindex="-1"
-        href="https://wa.me/5491124599499/?text=Hola, quiero hacer una consulta"> <img
-          src="assets/images/whatsapp.png" alt="second slide" class="nav-link" style="width: 100px;">Envianos un WhatsApp</a>
-      </div>    
+        <a
+          target="_blank"
+          tabindex="-1"
+          href="https://wa.me/5491124599499/?text=Hola, quiero hacer una consulta"
+        >
+          <img
+            src="assets/images/whatsapp.png"
+            alt="second slide"
+            class="nav-link"
+            style="width: 100px;"
+          />
+          Envianos un WhatsApp
+        </a>
+      </div>
     </nav>
   </header>
 
-  
-    <carousel [isAnimated]="true">
-      <slide>
-        <img src="assets/images/balanza.jpg" alt="first slide" style="display: block; width: 100%;">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">ARAL ABOGADOS</h1>
-          <p>NUESTRO OBJETIVO ES EL RESGUARDO DE SUS DERECHOS</p>
-        </div>
-      </slide>
-      <slide>
-        <img src="assets/images/buenosaires.jpg" alt="second slide" style="display: block; width: 100%;">
-        <div class="carousel-caption d-none d-md-block">
-          <ul>
-            <li type="circle"><a SimpleSmoothScroll [scrollTo]="'DivAccidenteTransito'" [duration]="500">Accidentes de
-                Tránsito</a></li>
-            <li type="square"><a SimpleSmoothScroll [scrollTo]="'DivART'" [duration]="500">ART</a></li>
-            <li type="disc"><a SimpleSmoothScroll [scrollTo]="'DivDerechoLaboral'" [duration]="500">Derecho Laboral</a>
-            </li>
-            <li type="disc"><a SimpleSmoothScroll [scrollTo]="'DivFamilia'" [duration]="500">Familia</a></li>
-            <li type="disc"><a SimpleSmoothScroll [scrollTo]="'DivDerechoPenal'" [duration]="500">Derecho Penal</a></li>
-          </ul>
-        </div>
-      </slide>
-      <slide>
-        <img src="assets/images/notificacion.jpg" alt="second slide" style="display: block; width: 100%; height: 100%;">
-        <div class="carousel-caption d-none d-md-block">
-          <p>Por razones de público conocimiento estamos realizando consultas virtuales como primer contacto con
-            nuestros clientes. La consulta se puede realizar a través de las distintas plataformas digitales que manejen
-            los consultantes. En caso de entrega de documentación y firma de escritos se concertará una entrevista en el
-            estudio con turno previo y cumpliendo con los protocolos vigentes. </p>
-          <p><a class="btn btn-lg btn-primary" target="_blank" 
-              href="https://wa.me/5491124599499/?text=Hola, quiero hacer una consulta">Clic aquí para enviarnos un WhatsApp <img
-                src="assets/images/whatsapp.png" alt="second slide" class="rounded-circle" style="width: 15%;"></a> </p>
-        </div>
-      </slide>
-    </carousel>
+  <carousel [isAnimated]="true">
+    <slide>
+      <img
+        src="assets/images/balanza.jpg"
+        alt="first slide"
+        style="display: block; width: 100%;"
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h1
+          style="
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+              sans-serif;
+          "
+        >
+          ARAL ABOGADOS
+        </h1>
+        <p>NUESTRO OBJETIVO ES EL RESGUARDO DE SUS DERECHOS</p>
+      </div>
+    </slide>
+    <slide>
+      <img
+        src="assets/images/buenosaires.jpg"
+        alt="second slide"
+        style="display: block; width: 100%;"
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <ul>
+          <li type="circle">
+            <a
+              SimpleSmoothScroll
+              [scrollTo]="'DivAccidenteTransito'"
+              [duration]="500"
+            >
+              Accidentes de Tránsito
+            </a>
+          </li>
+          <li type="square">
+            <a SimpleSmoothScroll [scrollTo]="'DivART'" [duration]="500">ART</a>
+          </li>
+          <li type="disc">
+            <a
+              SimpleSmoothScroll
+              [scrollTo]="'DivDerechoLaboral'"
+              [duration]="500"
+            >
+              Derecho Laboral
+            </a>
+          </li>
+          <li type="disc">
+            <a SimpleSmoothScroll [scrollTo]="'DivFamilia'" [duration]="500">
+              Familia
+            </a>
+          </li>
+          <li type="disc">
+            <a
+              SimpleSmoothScroll
+              [scrollTo]="'DivDerechoPenal'"
+              [duration]="500"
+            >
+              Derecho Penal
+            </a>
+          </li>
+          <li type="disc">
+            <a
+              SimpleSmoothScroll
+              [scrollTo]="'DivDerechoPenal'"
+              [duration]="500"
+            >
+              Asesoramiento Inmobiliario
+            </a>
+          </li>
+        </ul>
+      </div>
+    </slide>
+    <slide>
+      <img
+        src="assets/images/notificacion.jpg"
+        alt="second slide"
+        style="display: block; width: 100%; height: 100%;"
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <p>
+          Por razones de público conocimiento estamos realizando consultas
+          virtuales como primer contacto con nuestros clientes. La consulta se
+          puede realizar a través de las distintas plataformas digitales que
+          manejen los consultantes. En caso de entrega de documentación y firma
+          de escritos se concertará una entrevista en el estudio con turno
+          previo y cumpliendo con los protocolos vigentes.
+        </p>
+        <p>
+          <a
+            class="btn btn-lg btn-primary"
+            target="_blank"
+            href="https://wa.me/5491124599499/?text=Hola, quiero hacer una consulta"
+          >
+            Clic aquí para enviarnos un WhatsApp
+            <img
+              src="assets/images/whatsapp.png"
+              alt="second slide"
+              class="rounded-circle"
+              style="width: 15%;"
+            />
+          </a>
+        </p>
+      </div>
+    </slide>
+  </carousel>
 
-    <main>
+  <main>
     <div class="container marketing">
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider" id="DivAccidenteTransito" SimpleSmoothScroll [showHash]="true">
+      <hr
+        class="featurette-divider"
+        id="DivAccidenteTransito"
+        SimpleSmoothScroll
+        [showHash]="true"
+      />
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">ACCIDENTES DE TRÁNSITO <span class="text-muted"></span></h2>
+          <h2 class="featurette-heading">
+            ACCIDENTES DE TRÁNSITO
+            <span class="text-muted"></span>
+          </h2>
           <ul class="lead">
             <li>Lesiones</li>
             <li>Reclamos a terceros</li>
@@ -117,18 +302,32 @@
           <p class="lead"></p>
         </div>
         <div class="col-md-5">
-          <img src="assets/images/transito.jpg" alt="second slide" style="display: block; width: 500px; height: 500px;">
-          <a style="opacity: 0.2;" href='https://www.freepik.es/fotos/coche'>Foto de Coche creado por diana.grytsku - www.freepik.es</a>
+          <img
+            src="assets/images/transito.jpg"
+            alt="second slide"
+            style="display: block; width: 500px; height: 500px;"
+          />
+          <a style="opacity: 0.2;" href="https://www.freepik.es/fotos/coche">
+            Foto de Coche creado por diana.grytsku - www.freepik.es
+          </a>
         </div>
       </div>
 
-      <hr class="featurette-divider" id="DivART" SimpleSmoothScroll [showHash]="true">
+      <hr
+        class="featurette-divider"
+        id="DivART"
+        SimpleSmoothScroll
+        [showHash]="true"
+      />
 
       <div class="row featurette">
         <div class="col-md-7 order-md-2 d-flex justify-content-end">
           <div class="row">
             <div class="col">
-              <h2 class="featurette-heading">ART<span class="text-muted"></span></h2>
+              <h2 class="featurette-heading">
+                ART
+                <span class="text-muted"></span>
+              </h2>
               <ul class="lead">
                 <li>Presentaciones por enfermedades laboral</li>
                 <li>Covid</li>
@@ -138,16 +337,27 @@
           </div>
         </div>
         <div class="col-md-5 order-md-1">
-          <img src="assets/images/art.jpg" alt="second slide" style="display: block; width: 500px; height: 500px;">
-
+          <img
+            src="assets/images/art.jpg"
+            alt="second slide"
+            style="display: block; width: 500px; height: 500px;"
+          />
         </div>
       </div>
 
-      <hr class="featurette-divider" id="DivDerechoLaboral" SimpleSmoothScroll [showHash]="true">
+      <hr
+        class="featurette-divider"
+        id="DivDerechoLaboral"
+        SimpleSmoothScroll
+        [showHash]="true"
+      />
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">DERECHO LABORAL<span class="text-muted"></span></h2>
+          <h2 class="featurette-heading">
+            DERECHO LABORAL
+            <span class="text-muted"></span>
+          </h2>
           <ul class="lead">
             <li>Despidos. Indemnizaciones</li>
             <li>Conciliaciones laborales</li>
@@ -156,22 +366,34 @@
           </ul>
         </div>
         <div class="col-md-5">
-          <img src="assets/images/derechoLaboral.jpg" alt="second slide"
-            style="display: block; width: 500px; height: 500px;">
-
+          <img
+            src="assets/images/derechoLaboral.jpg"
+            alt="second slide"
+            style="display: block; width: 500px; height: 500px;"
+          />
         </div>
       </div>
-      <hr class="featurette-divider" id="DivFamilia" SimpleSmoothScroll [showHash]="true">
+      <hr
+        class="featurette-divider"
+        id="DivFamilia"
+        SimpleSmoothScroll
+        [showHash]="true"
+      />
 
       <div class="row featurette">
         <div class="col-md-7 order-md-2 d-flex justify-content-end">
           <div class="row">
             <div class="col">
-              <h2 class="featurette-heading">FAMILIA<span class="text-muted"></span></h2>
+              <h2 class="featurette-heading">
+                FAMILIA
+                <span class="text-muted"></span>
+              </h2>
               <ul class="lead">
                 <li>Divorcio</li>
-                <li>Responsabilidad parental, cuidado personal (tenencia), alimentos, régimen de comunicación (régimen
-                  de visitas)</li>
+                <li>
+                  Responsabilidad parental, cuidado personal (tenencia),
+                  alimentos, régimen de comunicación (régimen de visitas)
+                </li>
                 <li>Rectificación de partidas</li>
                 <li>Acuerdos extrajudiciales</li>
               </ul>
@@ -179,346 +401,506 @@
           </div>
         </div>
         <div class="col-md-5 order-md-1">
-          <img src="assets/images/familia.jpg" alt="second slide" style="display: block; width: 450px; height: 500px;">
-          <a style="opacity: 0.2;" href='https://www.freepik.es/fotos/amor'>Foto de Amor creado por senivpetro - www.freepik.es</a>
+          <img
+            src="assets/images/familia.jpg"
+            alt="second slide"
+            style="display: block; width: 450px; height: 500px;"
+          />
+          <a style="opacity: 0.2;" href="https://www.freepik.es/fotos/amor">
+            Foto de Amor creado por senivpetro - www.freepik.es
+          </a>
         </div>
       </div>
 
-      <hr class="featurette-divider" id="DivDerechoPenal" SimpleSmoothScroll [showHash]="true">
-
-
+      <hr
+        class="featurette-divider"
+        id="DivDerechoPenal"
+        SimpleSmoothScroll
+        [showHash]="true"
+      />
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">DERECHO PENAL<span class="text-muted"></span></h2>
+          <h2 class="featurette-heading">
+            DERECHO PENAL
+            <span class="text-muted"></span>
+          </h2>
         </div>
         <div class="col-md-5">
-          <img src="assets/images/derechoPenal.jpg" alt="second slide"
-            style="display: block; width: 500px; height: 500px;">
-
+          <img
+            src="assets/images/derechoPenal.jpg"
+            alt="second slide"
+            style="display: block; width: 500px; height: 500px;"
+          />
         </div>
-
       </div>
-      <hr class="featurette-divider" id="DivAsesoramientoInmobiliario" SimpleSmoothScroll [showHash]="true">
-
-
+      <hr
+        class="featurette-divider"
+        id="DivAsesoramientoInmobiliario"
+        SimpleSmoothScroll
+        [showHash]="true"
+      />
 
       <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">ASESORAMIENTO INMOBILIARIO<span class="text-muted"></span></h2>
-          <ul class="lead">
-            <li>Compraventa de inmueble. Locales comerciales</li>
-            <li>Alquileres</li>
-            <li>Contratos</li>
-            <li>No dudes en consultarnos!!</li>
-          </ul>
+        <div class="col-md-7 order-md-2 d-flex justify-content-end">
+          <div class="row">
+            <div class="col">
+              <h2 class="featurette-heading">
+                ASESORAMIENTO INMOBILIARIO
+                <span class="text-muted"></span>
+              </h2>
+              <ul class="lead">
+                <li>Compraventa de inmueble. Locales comerciales</li>
+                <li>Alquileres</li>
+                <li>Contratos</li>
+                <li>No dudes en consultarnos!!</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-md-5">
-          <img src="assets/images/hands-of-agent-and-client-shaking-hands-after-signed-contract-buy-new-apartment.jpg" alt="second slide"
-            style="display: block; width: 500px; height: 500px;">
-            <a style="opacity: 0.2;" href='https://www.freepik.es/fotos/negocios'>Foto de Negocios creado por jcomp - www.freepik.es</a>
+        <div class="col-md-5 order-md-1">
+          <img
+            src="assets/images/hands-of-agent-and-client-shaking-hands-after-signed-contract-buy-new-apartment.jpg"
+            alt="second slide"
+            style="display: block; width: 450px; height: 500px;"
+          />
+          <a style="opacity: 0.2;" href="https://www.freepik.es/fotos/negocios">
+            Foto de Negocios creado por jcomp - www.freepik.es
+          </a>
         </div>
-
       </div>
     </div>
     <!-- /END THE FEATURETTES -->
 
-
-    <hr class="featurette-divider" id="DivQuienesSomos" SimpleSmoothScroll [showHash]="true">
+    <hr
+      class="featurette-divider"
+      id="DivQuienesSomos"
+      SimpleSmoothScroll
+      [showHash]="true"
+    />
     <div>
       <div class="well well-lg card card-block card-header">
         <div class="row">
           <div class="col" style="text-align: center;">
-            <h1>¿Quiénes Somos?</h1><br>
-            <p class="lead">Somos un grupo de abogados que nos dedicamos a distintas ramas del derecho.
-              Nos precede un perfil proactivo, basado en experiencia conocimiento y dedicación profesional.
-              Realizamos un análisis individual y multidisciplinario de cada caso para abordarlo de una forma completa
-              brindando al cliente las distintas alternativas de resolución del mismo.
-              NUESTRO OBJETIVO ES EL RESGUARDO DE SUS DERECHO
+            <h1>¿Quiénes Somos?</h1>
+            <br />
+            <p class="lead">
+              Somos un grupo de abogados que nos dedicamos a distintas ramas del
+              derecho. Nos precede un perfil proactivo, basado en experiencia
+              conocimiento y dedicación profesional. Realizamos un análisis
+              individual y multidisciplinario de cada caso para abordarlo de una
+              forma completa brindando al cliente las distintas alternativas de
+              resolución del mismo. NUESTRO OBJETIVO ES EL RESGUARDO DE SUS
+              DERECHO
             </p>
           </div>
           <div class="col">
-            <img src="assets/images/logo.jpg" alt="second slide" style="display: block; width: 80%; ">
+            <img
+              src="assets/images/logo.jpg"
+              alt="second slide"
+              style="display: block; width: 80%;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr
+      class="featurette-divider"
+      id="DivPreguntasFrecuentes"
+      SimpleSmoothScroll
+      [showHash]="true"
+    />
+    <div>
+      <div class="well well-lg card card-block card-header">
+        <div class="row">
+          <div class="col-lg-4">
+            <img
+              src="assets/images/PreguntasFrecuentes.jpg"
+              alt="second slide"
+              style="display: block; width: 50%; height: 50%;"
+            />
+
+            <h1>Preguntas Frecuentes</h1>
           </div>
         </div>
 
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Qué documentación necesito para presentar un reclamo ante un accidente de tránsito?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <ul>
+              <li>
+                1. Denuncia administrativa del siniestro presentada ante su
+                aseguradora.
+              </li>
+              <li>
+                2. Certificado de cobertura de la compañía que ampara su
+                vehículo a la fecha del siniestro. (Pedirlo a la compañía de
+                seguro o productor de seguros)
+              </li>
+              <li>
+                3. En caso de reclamo de franquicia, una nota emitida por su
+                compañía de seguros que indique el monto de la franquicia y el
+                costo total de la reparación autorizado (Carta de Franquicia).
+              </li>
+              <li>4. Fotocopia del título del automotor.</li>
+              <li>
+                5. Fotocopia de la cédula de identificación del automotor
+                (cédula verde)
+              </li>
+              <li>
+                6. Fotocopia de la licencia del conductor al momento del
+                accidente
+              </li>
+              <li>7. Fotocopia del documento de identidad del conductor</li>
+              <li>
+                8. Autorización del cliente a realizar el reclamo administrativo
+                firmado por este (el modelo de autorización se le enviará para
+                que pueda completarlo)
+              </li>
+              <li>
+                9. En caso de que el conductor no sea el mismo, la cedula azul.
+              </li>
+              <li>
+                10. Dos presupuestos detallados de la reparación de los daños,
+                con los trabajos de mano de obra, chapa, pintura, mecánica,
+                repuestos, etc.
+              </li>
+              <li>
+                11. Varias fotografías de los daños y una en la que se vea la
+                patente del vehículo y el auto en general.
+              </li>
+              <li>
+                12. Un escrito firmado en carácter de declaración jurada en caso
+                de que no tuvieras cobertura de seguro. (Lo realiza el estudio
+                jurídico)
+              </li>
+              <li>
+                13. Fotocopia del formulario 08 de transferencia por ante el
+                RNPA con firma certificada del comprador y del vendedor, si el
+                reclamante no fuera el titular registral del vehículo por una
+                compra-venta reciente. (Si compró y todavía no hizo la
+                transferencia del auto y lo chocan en el transcurso)
+              </li>
+            </ul>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Cuánto tiempo tengo para iniciar el reclamo?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>
+              Como en todo accidente de tránsito, usted cuenta hasta con dos
+              años para iniciar el reclamo. Recomendamos que no deje pasar el
+              tiempo y reclame lo que le corresponde cuanto antes.
+            </p>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Necesito ir al médico después del accidente?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>
+              Es muy importante que usted y todos los acompañantes que viajaban
+              en el vehículo, busquen atención médica inmediatamente después del
+              accidente de tránsito, aunque no sienta que fue herido. Algunas
+              lesiones no se hacen visibles hasta días o semanas después del
+              accidente. Mientras más tiempo transcurra entre la fecha del
+              accidente de tránsito y la fecha de su primera visita al médico,
+              más fácil le resultará a la compañía de seguros, reducir su
+              reclamo por lesiones.
+            </p>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Puedo iniciar un reclamo si sufrí un accidente como acompañante?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>
+              Si, puede. En general, los accidentados como acompañantes no
+              presentan el reclamo para no generarle un problema al dueño del
+              vehículo, a quien conocen y no desean perjudicar. Si este último
+              posee su seguro al día, la compañía de seguros será la que
+              responda, el dueño del vehículo no se verá perjudicado de ninguna
+              forma.
+            </p>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Qué es un despido?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>
+              Es una forma de dar por finalizado el contrato de trabajo por
+              decisión de alguna de las partes y puede fundarse en una justa
+              causa o disponerse sin expresión de ésta.
+            </p>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Quién puede poner fin a la relación laboral?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>
+              Cualquiera de las dos partes, tanto el trabajador como su
+              empleador pueden dar fin a la relación laboral que los une. En
+              aquellos casos en los que el empleador decide unilateralmente
+              extinguir el vínculo -sin invocar una justa causa, invocándola de
+              manera deficiente o no probándola-, estamos en presencia de un
+              “despido directo”. En este sentido cobra vital importancia un
+              completo asesoramiento al trabajador en forma inmediata, para
+              determinar si realmente es válido lo que dice el empleador o si
+              corresponde una indemnización. En aquellos casos en los que el
+              trabajador es el que pone fin a la relación laboral fundándose en
+              un incumplimiento del empleador de entidad tal que constituye una
+              injuria que impida la continuación del contrato, estamos en
+              presencia de un “despido indirecto”. Para este supuesto es
+              necesario el asesoramiento profesional previo, para no caer en
+              abandono de trabajo.
+            </p>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Qué hago si me despidieron?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>
+              Lo primero que se debe hacer es saber si el despido está
+              debidamente realizado. Si, simplemente, no dejan entrar al
+              trabajador a su puesto de trabajo o la mera notificación verbal no
+              alcanza. El despido tiene que ser notificado fehacientemente
+              mediante telegrama o carta documento dirigido al trabajador,
+              indicando las causas y la fecha a partir de la cual tendrá efecto.
+              En un caso u otro, es importante que consulte con urgencia a un
+              abogado laboralista. Él será quien indique qué pasos seguir para
+              poder reclamar la indemnización que corresponda. Es importante no
+              firmar nada o aceptar ningún pago sin consultar primero con un
+              abogado especialista en Derecho Laboral. Asimismo, por más que te
+              lo exijan, nunca envíes un telegrama de renuncia porque eso te va
+              a hacer perder la mayoría de tus derechos.
+            </p>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Qué pasa si estaba trabajando en negro?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>
+              El trabajo en negro es una falta grave del empleador. En este
+              caso, seguramente, el despido va a ser verbal, debiendo consultar
+              inmediatamente con un abogado laboralista cuáles son las
+              notificaciones que se deben enviar para resguardar los derechos
+              del trabajador y poder reclamar después la indemnización
+              correspondiente. La Ley Nacional de Empleo y la Ley 25.323 crean
+              un sistema indemnizatorio para los trabajadores que logren
+              acreditar el haber prestado tareas sin haber sido registrados.
+              Para poder reclamar en base a estas disposiciones, es necesario el
+              envío de una serie de telegramas de denuncia.
+            </p>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Cómo es el proceso del reclamo por despido?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>
+              Primero se va a iniciar un reclamo mediante telegramas. Si tu
+              empleador no colabora o si rechaza los telegramas formalmente, tu
+              abogado va a solicitar una audiencia en el SECLO. Esa audiencia es
+              una etapa de conciliación laboral obligatoria. Si hay acuerdo, se
+              termina el reclamo. Si no, quedará habilitada la vía judicial para
+              continuar con el reclamo.
+            </p>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Cuánto tiempo tengo para hacer el reclamo?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>El periodo para iniciar un reclamo por despido es de 2 años</p>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Tengo que pagar algún tipo de gasto?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>
+              Todos los procedimientos judiciales o administrativos por reclamos
+              laborales son gratis para el trabajador.
+            </p>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Qué es un accidente de trabajo?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>
+              Se trata de cualquier accidente sufrido en el lugar de trabajo
+              mientras desarrolla sus tareas, o en el trayecto entre el
+              domicilio del trabajador y el lugar de trabajo.
+            </p>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Qué debo hacer en caso de sufrir un accidente de trabajo?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>
+              Se debe informar el hecho ante su empleador, quien tiene la
+              obligación de comunicar el accidente o enfermedad a la ART. Si no
+              la realiza su empleador, es muy importante la asesoría de un
+              abogado especialista en accidentes para la confección de la
+              denuncia, así no cometerá errores que pueden ser usados en su
+              contra. Es importante destacar que la ART tiene la obligación de
+              recibir toda denuncia de accidente o enfermedad profesional.
+            </p>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Puede el reclamo perjudicar su continuidad laboral?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>
+              En ningún caso el reclamo debería perjudicar la continuidad
+              laboral, siendo que el mismo se realiza contra la aseguradora de
+              riesgos de trabajo ART, que es el seguro contratado por el
+              empleador para que cubra las prestaciones médicas o dinerarias que
+              pudiera necesitar el trabajador.
+            </p>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Qué pasa si soy despedido mientras recibo tratamiento?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>
+              Si el empleador despidiese al trabajador durante el plazo de las
+              interrupciones pagas por accidente o enfermedad inculpable, deberá
+              abonar, además de las indemnizaciones por despido injustificado,
+              los salarios correspondientes a todo el tiempo que faltare para el
+              vencimiento de aquélla o a la fecha del alta, según demostración
+              que hiciese el trabajador.
+            </p>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Puede la ART rechazar la denuncia?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>
+              A partir de la recepción de la denuncia, la ART tiene un plazo de
+              10 días hábiles para rechazar el accidente o enfermedad
+              profesional, pudiendo extender este plazo por otros 10 días
+              hábiles, siempre que le notifique que hará uso de esta ampliación
+              del plazo. En ese caso, deberemos presentarnos ante la Comisión
+              Médica para iniciar el Trámite por Rechazo de la denuncia de la
+              contingencia.
+            </p>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Cuáles son los requisitos del alta médica?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>
+              Una vez finalizado el tratamiento correspondiente, el médico de la
+              ART le otorgará el alta médica, la cual debe ser otorgada por
+              escrito y notificada al trabajador. Al ser otorgada el alta el
+              trabajador deberá presentarse ante su empleador para reiniciar la
+              actividad laboral.
+            </p>
+          </accordion-group>
+        </accordion>
+
+        <accordion [isAnimated]="true">
+          <accordion-group
+            heading="¿Qué debo hacer si no estoy de acuerdo con el alta?"
+            [panelClass]="customClass"
+            [isOpen]="isFirstOpen"
+          >
+            <p>
+              En el supuesto de estar en desacuerdo con el alta otorgada debe
+              informar a su empleador para que este solicite un reingreso a la
+              ART, o bien solicitar directamente el reingreso a la ART.
+            </p>
+          </accordion-group>
+        </accordion>
       </div>
     </div>
-
-    <hr class="featurette-divider" id="DivPreguntasFrecuentes" SimpleSmoothScroll [showHash]="true">
-    <div>
-      <div class="well well-lg card card-block card-header">
-   
-    <div class="row">
-      <div class="col-lg-4">
-        <img src="assets/images/PreguntasFrecuentes.jpg" alt="second slide"
-          style="display: block; width: 50%; height: 50%;">
-
-        <h1>Preguntas Frecuentes</h1>
-
-      </div>
-    </div>
-  
-    <accordion [isAnimated]="true">        
-      <accordion-group heading="¿Qué documentación necesito para presentar un reclamo ante un accidente de tránsito?"   [panelClass]="customClass"
-      [isOpen]="isFirstOpen">
-      <ul>
-        <li>1. Denuncia administrativa del siniestro presentada ante su aseguradora.</li>
-        <li> 2. Certificado de cobertura de la compañía que ampara su vehículo a la fecha del siniestro. (Pedirlo a
-          la compañía de seguro o productor de seguros)</li>
-        <li>3. En caso de reclamo de franquicia, una nota emitida por su compañía de seguros que indique el monto de
-          la franquicia y el costo total de la reparación autorizado (Carta de Franquicia).</li>
-        <li> 4. Fotocopia del título del automotor.</li>
-        <li>5. Fotocopia de la cédula de identificación del automotor (cédula verde)</li>
-        <li>6. Fotocopia de la licencia del conductor al momento del accidente</li>
-        <li>7. Fotocopia del documento de identidad del conductor</li>
-        <li>8. Autorización del cliente a realizar el reclamo administrativo firmado por este (el modelo de
-          autorización se le enviará para que pueda completarlo)</li>
-        <li>9. En caso de que el conductor no sea el mismo, la cedula azul.</li>
-        <li>10. Dos presupuestos detallados de la reparación de los daños, con los trabajos de mano de obra, chapa,
-          pintura, mecánica, repuestos, etc.</li>
-        <li>11. Varias fotografías de los daños y una en la que se vea la patente del vehículo y el auto en general.
-        </li>
-        <li>12. Un escrito firmado en carácter de declaración jurada en caso de que no tuvieras cobertura de seguro.
-          (Lo realiza el estudio jurídico)</li>
-        <li>13. Fotocopia del formulario 08 de transferencia por ante el RNPA con firma certificada del comprador y
-          del vendedor, si el reclamante no fuera el titular registral del vehículo por una compra-venta reciente.
-          (Si compró y todavía no hizo la transferencia del auto y lo chocan en el transcurso)</li>
-      </ul>
-      </accordion-group>      
-    </accordion>
-  
-
-   
-    <accordion [isAnimated]="true">        
-      <accordion-group heading="¿Cuánto tiempo tengo para iniciar el reclamo?"   [panelClass]="customClass"
-      [isOpen]="isFirstOpen">
-      <p>Como en todo accidente de tránsito, usted cuenta hasta con dos años para iniciar el reclamo. Recomendamos
-        que no deje pasar el tiempo y reclame lo que le corresponde cuanto antes.</p>
-      </accordion-group>      
-    </accordion>
-   
-   
-    <accordion [isAnimated]="true">        
-      <accordion-group heading="¿Necesito ir al médico después del accidente?"   [panelClass]="customClass"
-      [isOpen]="isFirstOpen">
-      <p>Es muy importante que usted y todos los acompañantes que viajaban en el vehículo, busquen atención médica
-        inmediatamente después del accidente de tránsito, aunque no sienta que fue herido. Algunas lesiones no se
-        hacen visibles hasta días o semanas después del accidente. Mientras más tiempo transcurra entre la fecha del
-        accidente de tránsito y la fecha de su primera visita al médico, más fácil le resultará a la compañía de
-        seguros, reducir su reclamo por lesiones.</p>    
-      </accordion-group>      
-    </accordion>
-   
-
-    
-    
-      <accordion [isAnimated]="true">        
-        <accordion-group heading="¿Puedo iniciar un reclamo si sufrí un accidente como acompañante?"   [panelClass]="customClass"
-        [isOpen]="isFirstOpen">
-        <p>Si, puede. En general, los accidentados como acompañantes no presentan el reclamo para no generarle un
-          problema al dueño del vehículo, a quien conocen y no desean perjudicar. Si este último posee su seguro al
-          día, la compañía de seguros será la que responda, el dueño del vehículo no se verá perjudicado de ninguna
-          forma.
-        </p>
-        </accordion-group>      
-      </accordion>
-    
-    
-    <accordion [isAnimated]="true">        
-      <accordion-group heading="¿Qué es un despido?"   [panelClass]="customClass"
-      [isOpen]="isFirstOpen">
-      <p>Es una forma de dar por finalizado el contrato de trabajo por decisión de alguna de las partes y puede
-        fundarse en una justa causa o disponerse sin expresión de ésta.</p>
-      </accordion-group>      
-    </accordion>
-   
-
-   
-    
-    <accordion [isAnimated]="true">        
-      <accordion-group heading="¿Quién puede poner fin a la relación laboral?"   [panelClass]="customClass"
-      [isOpen]="isFirstOpen">
-      <p>Cualquiera de las dos partes, tanto el trabajador como su empleador pueden dar fin a la relación laboral
-        que los une.
-        En aquellos casos en los que el empleador decide unilateralmente extinguir el vínculo -sin invocar una justa
-        causa, invocándola de manera deficiente o no probándola-, estamos en presencia de un “despido directo”. En
-        este sentido cobra vital importancia un completo asesoramiento al trabajador en forma inmediata, para
-        determinar si realmente es válido lo que dice el empleador o si corresponde una indemnización.
-        En aquellos casos en los que el trabajador es el que pone fin a la relación laboral fundándose en un
-        incumplimiento del empleador de entidad tal que constituye una injuria que impida la continuación del
-        contrato, estamos en presencia de un “despido indirecto”. Para este supuesto es necesario el asesoramiento
-        profesional previo, para no caer en abandono de trabajo.
-      </p>
-      </accordion-group>      
-    </accordion>
-   
-   
-    <accordion [isAnimated]="true">        
-      <accordion-group heading="¿Qué hago si me despidieron?"   [panelClass]="customClass"
-      [isOpen]="isFirstOpen">
-      <p>Lo primero que se debe hacer es saber si el despido está debidamente realizado. Si, simplemente, no dejan
-        entrar al trabajador a su puesto de trabajo o la mera notificación verbal no alcanza.
-        El despido tiene que ser notificado fehacientemente mediante telegrama o carta documento dirigido al
-        trabajador, indicando las causas y la fecha a partir de la cual tendrá efecto.
-        En un caso u otro, es importante que consulte con urgencia a un abogado laboralista. Él será quien indique
-        qué pasos seguir para poder reclamar la indemnización que corresponda. Es importante no firmar nada o
-        aceptar ningún pago sin consultar primero con un abogado especialista en Derecho Laboral. Asimismo, por más
-        que te lo exijan, nunca envíes un telegrama de renuncia porque eso te va a hacer perder la mayoría de tus
-        derechos.
-      </p>
-      </accordion-group>      
-    </accordion>
-  
-  
-    
-  <accordion [isAnimated]="true">        
-    <accordion-group heading="¿Qué pasa si estaba trabajando en negro?"   [panelClass]="customClass"
-    [isOpen]="isFirstOpen">
-    <p>El trabajo en negro es una falta grave del empleador. En este caso, seguramente, el despido va a ser
-      verbal, debiendo consultar inmediatamente con un abogado laboralista cuáles son las notificaciones que se
-      deben enviar para resguardar los derechos del trabajador y poder reclamar después la indemnización
-      correspondiente.
-      La Ley Nacional de Empleo y la Ley 25.323 crean un sistema indemnizatorio para los trabajadores que logren
-      acreditar el haber prestado tareas sin haber sido registrados. Para poder reclamar en base a estas
-      disposiciones, es necesario el envío de una serie de telegramas de denuncia.
-    </p>
-    </accordion-group>      
-  </accordion>
-  
-   
-    
-  <accordion [isAnimated]="true">        
-    <accordion-group heading="¿Cómo es el proceso del reclamo por despido?"   [panelClass]="customClass"
-    [isOpen]="isFirstOpen">
-    <p>Primero se va a iniciar un reclamo mediante telegramas. Si tu empleador no colabora o si rechaza los
-      telegramas formalmente, tu abogado va a solicitar una audiencia en el SECLO.
-      Esa audiencia es una etapa de conciliación laboral obligatoria. Si hay acuerdo, se termina el reclamo. Si
-      no, quedará habilitada la vía judicial para continuar con el reclamo.
-    </p>
-    </accordion-group>      
-  </accordion>
- 
-   
-    
-  <accordion [isAnimated]="true">        
-    <accordion-group heading="¿Cuánto tiempo tengo para hacer el reclamo?"   [panelClass]="customClass"
-    [isOpen]="isFirstOpen">
-    <p>El periodo para iniciar un reclamo por despido es de 2 años</p>
-    </accordion-group>      
-  </accordion>
-  
-    
-    
-  <accordion [isAnimated]="true">        
-    <accordion-group heading="¿Tengo que pagar algún tipo de gasto?"   [panelClass]="customClass"
-    [isOpen]="isFirstOpen">
-    <p>Todos los procedimientos judiciales o administrativos por reclamos laborales son gratis para el trabajador.
-    </p>
-    </accordion-group>      
-  </accordion>
-   
-   
-    
-  <accordion [isAnimated]="true">        
-    <accordion-group heading="¿Qué es un accidente de trabajo?"   [panelClass]="customClass"
-    [isOpen]="isFirstOpen">
-    <p>Se trata de cualquier accidente sufrido en el lugar de trabajo mientras desarrolla sus tareas, o en el
-      trayecto entre el domicilio del trabajador y el lugar de trabajo.</p>
-    </accordion-group>      
-  </accordion>
-  
-    
-    
-  <accordion [isAnimated]="true">        
-    <accordion-group heading="¿Qué debo hacer en caso de sufrir un accidente de trabajo?"   [panelClass]="customClass"
-    [isOpen]="isFirstOpen">
-    <p>Se debe informar el hecho ante su empleador, quien tiene la obligación de comunicar el accidente o
-      enfermedad a la ART.
-      Si no la realiza su empleador, es muy importante la asesoría de un abogado especialista en accidentes para
-      la confección de la denuncia, así no cometerá errores que pueden ser usados en su contra.
-      Es importante destacar que la ART tiene la obligación de recibir toda denuncia de accidente o enfermedad
-      profesional.
-    </p>
-    </accordion-group>      
-  </accordion>
-   
-
-    
-    
-  <accordion [isAnimated]="true">        
-    <accordion-group heading="¿Puede el reclamo perjudicar su continuidad laboral?"   [panelClass]="customClass"
-    [isOpen]="isFirstOpen">
-    <p>En ningún caso el reclamo debería perjudicar la continuidad laboral, siendo que el mismo se realiza contra
-      la aseguradora de riesgos de trabajo ART, que es el seguro contratado por el empleador para que cubra las
-      prestaciones médicas o dinerarias que pudiera necesitar el trabajador.</p>
-    </accordion-group>      
-  </accordion>
-   
-
-   
-    
-  <accordion [isAnimated]="true">        
-    <accordion-group heading="¿Qué pasa si soy despedido mientras recibo tratamiento?"   [panelClass]="customClass"
-    [isOpen]="isFirstOpen">
-    <p>Si el empleador despidiese al trabajador durante el plazo de las interrupciones pagas por accidente o
-      enfermedad inculpable, deberá abonar, además de las indemnizaciones por despido injustificado, los salarios
-      correspondientes a todo el tiempo que faltare para el vencimiento de aquélla o a la fecha del alta, según
-      demostración que hiciese el trabajador.</p>
-    </accordion-group>      
-  </accordion>
-   
-
-   
-    
-  <accordion [isAnimated]="true">        
-    <accordion-group heading="¿Puede la ART rechazar la denuncia?"   [panelClass]="customClass"
-    [isOpen]="isFirstOpen">
-    <p>A partir de la recepción de la denuncia, la ART tiene un plazo de 10 días hábiles para rechazar el
-      accidente o enfermedad profesional, pudiendo extender este plazo por otros 10 días hábiles, siempre que le
-      notifique que hará uso de esta ampliación del plazo.
-      En ese caso, deberemos presentarnos ante la Comisión Médica para iniciar el Trámite por Rechazo de la
-      denuncia de la contingencia.
-    </p>
-    </accordion-group>      
-  </accordion>
-  
-  
-    
-  <accordion [isAnimated]="true">        
-    <accordion-group heading="¿Cuáles son los requisitos del alta médica?"   [panelClass]="customClass"
-    [isOpen]="isFirstOpen">
-    <p>Una vez finalizado el tratamiento correspondiente, el médico de la ART le otorgará el alta médica, la cual
-      debe ser otorgada por escrito y notificada al trabajador.
-      Al ser otorgada el alta el trabajador deberá presentarse ante su empleador para reiniciar la actividad
-      laboral.
-    </p>
-    </accordion-group>      
-  </accordion>
-  
-   
-    
-  <accordion [isAnimated]="true">        
-    <accordion-group heading="¿Qué debo hacer si no estoy de acuerdo con el alta?"   [panelClass]="customClass"
-    [isOpen]="isFirstOpen">
-    <p>En el supuesto de estar en desacuerdo con el alta otorgada debe informar a su empleador para que este
-      solicite un reingreso a la ART, o bien solicitar directamente el reingreso a la ART.</p>
-    </accordion-group>      
-  </accordion>
-      </div>
-    </div>
-<br><br>
-<hr class="featurette-divider">
-<br>
+    <br />
+    <br />
+    <hr class="featurette-divider" />
+    <br />
 
     <!-- FOOTER -->
     <footer class="container">
-      <p class="float-end"><a id="LinkInicio" SimpleSmoothScroll [scrollTo]="'DivInicio'" [duration]="500">Volver al
-          principio</a></p>
-      <p>&copy; 2017–2021 Aral Abogados, Inc. &middot; <a href="#">Todos los derechos reservados</a> &middot; <a
-          href="#">Términos</a></p>
+      <p class="float-end">
+        <a
+          id="LinkInicio"
+          SimpleSmoothScroll
+          [scrollTo]="'DivInicio'"
+          [duration]="500"
+        >
+          Volver al principio
+        </a>
+      </p>
+      <p>
+        &copy; 2017–2021 Aral Abogados, Inc. &middot;
+        <a href="#">Todos los derechos reservados</a>
+        &middot;
+        <a href="#">Términos</a>
+      </p>
     </footer>
-
   </main>
-
 </body>

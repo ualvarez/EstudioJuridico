@@ -134,4 +134,6 @@ main{
  
 }
 
-
+:host >>> .card.customClass, .card.customClass .card-header, .panel.customClass {
+  font-size: 3.5vw;
+}
